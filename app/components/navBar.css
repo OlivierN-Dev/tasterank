@@ -1,0 +1,148 @@
+.map-search {
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  z-index: 3;
+  width: min(400px, calc(100vw - 32px));
+  transform: translateX(-50%);
+}
+
+.map-navbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+  height: 48px;
+  padding: 0 8px 0 14px;
+  border: 1px solid #e8e7e2;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 14%);
+  color: #242421;
+}
+
+.map-navbar__search-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: #92918b;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.map-navbar__input {
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 14px;
+}
+
+.map-navbar__input::placeholder {
+  color: #77766f;
+}
+
+.map-navbar__input::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
+.map-navbar__radius {
+  flex: 0 0 auto;
+  padding: 5px 9px;
+  border: 1px solid #e8e7e2;
+  border-radius: 999px;
+  background: #f4f3ef;
+  color: #62615c;
+  font-size: 12px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.map-navbar__location {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #f4f3ef;
+  color: #62615c;
+  cursor: pointer;
+}
+
+.map-navbar__location svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.map-navbar__location:disabled,
+.map-navbar__submit:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.map-navbar__submit {
+  flex: 0 0 auto;
+  min-height: 34px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: #2d5a3d;
+  color: #fff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.map-search__message {
+  margin: 8px 8px 0;
+  color: #8b3328;
+  font-size: 13px;
+  text-align: center;
+  text-shadow: 0 1px 2px #fff;
+}
+
+@media (max-width: 480px) {
+  .map-search {
+    top: 12px;
+    width: calc(100vw - 24px);
+  }
+
+  .map-navbar {
+    height: 44px;
+    gap: 6px;
+    padding-left: 10px;
+  }
+
+  .map-navbar__radius {
+    padding: 4px 7px;
+    font-size: 11px;
+  }
+
+  .map-navbar__location {
+    width: 30px;
+    height: 30px;
+  }
+
+  .map-navbar__submit {
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .map-navbar__input {
+    font-size: 13px;
+  }
+}

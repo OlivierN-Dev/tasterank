@@ -1,0 +1,41 @@
+.aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  width: min(26rem, 100vw);
+  overflow-y: auto;
+  background: #fff;
+  transition: transform 220ms ease;
+}
+
+.aside--default {
+  width: min(26rem, 100vw);
+}
+
+.aside--wide {
+  width: min(32rem, 100vw);
+}
+
+.aside--left {
+  left: 0;
+}
+
+.aside--right {
+  right: 0;
+}
+
+.aside--left.is-closed {
+  transform: translateX(-100%);
+}
+
+.aside--right.is-closed {
+  transform: translateX(100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aside {
+    transition-duration: 0.01ms;
+  }
+}

@@ -1,0 +1,22 @@
+.tt-tabs button {
+  background: none;
+  border: 0;
+  padding: 10px 0 14px;
+  font: inherit;
+  font-size: 18px;
+  color: var(--faint);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.tt-tabs button span {
+  font-size: 14px;
+  margin-left: 6px;
+  color: var(--faint);
+}
+
+.tt-tabs button.active {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}

@@ -1,0 +1,9 @@
+.tt-price {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.tt-price .off {
+  color: #d4d3ce;
+}

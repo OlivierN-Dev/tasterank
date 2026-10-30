@@ -1,0 +1,49 @@
+.owner-restaurant-button {
+  position: fixed;
+  right: 24px;
+  top: 24px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: #3f6545;
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 18%);
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.owner-restaurant-button:hover {
+  background: #34563a;
+  transform: translateY(-1px);
+}
+
+.owner-restaurant-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.owner-restaurant-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+@media (max-width: 480px) {
+  .owner-restaurant-button {
+    right: 16px;
+    bottom: 16px;
+  }
+}

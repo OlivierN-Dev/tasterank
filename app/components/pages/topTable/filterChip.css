@@ -1,0 +1,17 @@
+.tt-chip {
+  flex-shrink: 0;
+  padding: 4px 16px;
+  background: var(--chip);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.tt-chip.active {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap");
+
+.tt {
+    --ink: #1c1c1a;
+    --muted: #6b6a66;
+    --faint: #a8a7a2;
+    --line: #e6e5e0;
+    --chip: #efeee9;
+    --green: #3f6545;
+    --peach: #f8eddf;
+    --peach-line: #ecd3ad;
+    --gold: #b58a3c;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Inter", system-ui, sans-serif;
+    color: var(--ink);
+}
+
+/* Header */
+.tt-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px 0;
+}
+.tt-logo {
+    font-family: "Source Serif 4", serif;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+}
+.tt-close {
+    background: none;
+    border: 0;
+    font-size: 30px;
+    line-height: 1;
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.tt-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-start;
+    box-sizing: border-box;
+    max-width: calc(100% - 64px);
+    margin: 22px 32px 0;
+    padding: 5px 14px;
+    background: var(--chip);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tt-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--green);
+}
+
+.tt-title {
+    font-family: "Source Serif 4", serif;
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: -1px;
+    margin: 22px 32px 0;
+}
+.tt-sub {
+    margin: 10px 32px 0;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--muted);
+}
+
+/* Tabs */
+.tt-tabs {
+    display: flex;
+    gap: 32px;
+    margin-top: 20px;
+    padding: 0 32px;
+    border-bottom: 1px solid var(--line);
+}
+
+/* Filters */
+.tt-filters {
+    display: flex;
+    gap: 8px;
+    padding: 18px 32px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-bottom: 1px solid var(--line);
+}
+.tt-filters::-webkit-scrollbar { display: none; }
+
+/* List */
+.tt-list {
+    list-style: none;
+    margin: 0;
+    padding: 10px 16px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.tt-empty {
+    padding: 28px 16px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Footer */
+.tt-foot {
+    padding: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--faint);
+    border-top: 1px solid var(--line);
+}

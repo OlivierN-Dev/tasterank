@@ -1,0 +1,33 @@
+.map {
+  width: 100%;
+  height: 100vh;
+}
+
+.custom-pin {
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.custom-pin__body {
+  width: 100%;
+  height: 100%;
+  background: #2d5a3d;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 0 0 6px rgba(222, 205, 170, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s;
+}
+
+.custom-pin:hover .custom-pin__body {
+  transform: rotate(-45deg) scale(1.1);
+}
+
+.custom-pin__body span {
+  transform: rotate(45deg);
+  color: #fff;
+  font: bold 18px sans-serif;
+}
